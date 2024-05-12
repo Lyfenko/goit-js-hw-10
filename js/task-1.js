@@ -36,6 +36,8 @@ class Slider {
         slide.src = this.images[index];
         this.currentIndex = index;
         this.updateCounter();
+        this.updateCounter();
+        this.updateButtons();
     }
 
     nextSlide() {
@@ -47,6 +49,20 @@ class Slider {
     prevSlide() {
         if (this.currentIndex > 0) {
             this.showSlide(this.currentIndex - 1);
+        }
+    }
+
+    updateButtons() {
+        const prevButton = this.container.querySelector('.prev');
+        const nextButton = this.container.querySelector('.next');
+
+        prevButton.classList.remove('disabled');
+        nextButton.classList.remove('disabled');
+
+        if (this.currentIndex === 0) {
+            prevButton.classList.add('disabled');
+        } else if (this.currentIndex === this.images.length - 1) {
+            nextButton.classList.add('disabled');
         }
     }
 

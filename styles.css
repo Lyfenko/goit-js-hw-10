@@ -21,3 +21,8 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+.slider button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
