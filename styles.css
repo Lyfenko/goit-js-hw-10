@@ -1,0 +1,23 @@
+.slider-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.slider button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.counter {
+    font-size: 14px;
+    margin-top: 5px;
+}
